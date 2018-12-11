@@ -1,0 +1,17 @@
+{
+    "contacts":
+[
+    {"fname":"Sayali","lname":"Patil","email":"say@gmail.com", "mobile":9096956986,"status":"ACTIVE"},
+    {"fname":"Shreya","lname":"Ladkat","email":"shre@gmail.com", "mobile":9637436932,"status":"INACTIVE"},
+    {"fname":"Smruti","lname":"Bais","email":"smr@gmail.com", "mobile":9272115939,"status":"ACTIVE"},
+    {"fname":"Sanchi","lname":"Mohare","email":"san@gmail.com", "mobile":9999912345,"status":"INACTIVE"},
+    {"fname":"Shweta","lname":"Dhage","email":"dha@gmail.com", "mobile":9999998765,"status":"ACTIVE"},
+    {"fname":"Swati","lname":"Daga","email":"swe@gmail.com", "mobile":9999965432,"status":"ACTIVE"},
+    {"fname":"Samruddhi","lname":"Wagh","email":"samw@gmail.com", "mobile":8888812345,"status":"INACTIVE"},
+    {"fname":"Shruti","lname":"Khelke","email":"shruk@gmail.com", "mobile":8888889123,"status":"ACTIVE"},
+    {"fname":"Saheli","lname":"More","email":"smore@gmail.com", "mobile":8777798765,"status":"ACTIVE"},
+    {"fname":"Sayeee","lname":"Patil","email":"saypatil@gmail.com", "mobile":8899887766,"status":"ACTIVE"},
+    {"fname":"Vaishali","lname":"S","email":"vskumar@gmail.com", "mobile":8599887766,"status":"ACTIVE"}
+
+]
+}

@@ -1,0 +1,40 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Contact</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="fname">First Name:</label>
+      <input formControlName="fname" placeholder="First Name" name="fname" class="form-control" 
+      [ngClass]="{ 'is-invalid': submitted && f.fname.errors }" id="fname">
+      <div *ngIf="submitted && f.fname.errors" class="invalid-feedback">
+        <div *ngIf="f.fname.errors.required">First Name is required</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="lName">Last Name:</label>
+      <input formControlName="lname" placeholder="Last name" name="lname" class="form-control" 
+      [ngClass]="{ 'is-invalid': submitted && f.lname.errors }" id="lname">
+      <div *ngIf="submitted && f.lname.errors" class="invalid-feedback">
+        <div *ngIf="f.lname.errors.required">First Name is required</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email">Email address:</label>
+      <input type="email" formControlName="email" placeholder="Email" name="email" class="form-control" 
+      [ngClass]="{ 'is-invalid': submitted && f.email.errors }" id="email">
+      <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+        <div *ngIf="f.email.errors.required">Email is required</div>
+        <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+    </div>
+    </div>
+    <div class="form-group">
+      <label for="mobile">Phone Number:</label>
+      <input type="tel" formControlName="mobile" placeholder="mobile" name="mobile" class="form-control" 
+      [ngClass]="{ 'is-invalid': submitted && f.mobile.errors }" id="mobile">
+      <div *ngIf="submitted && f.mobile.errors" class="invalid-feedback">
+      <div *ngIf="f.mobile.errors.required">Phone Number is required</div>
+      <div *ngIf="f.mobile.errors.pattern">Phone Number must be at 10 digits characters</div>
+      </div>
+    </div>
+    <button class="btn btn-success">Add</button>
+  </form>
+</div>
